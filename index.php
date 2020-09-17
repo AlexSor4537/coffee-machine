@@ -13,24 +13,25 @@
       <div class="container">
       <div class="row">
       <div class="col-6 coffee-list d-flex flex-column justfly - content-around">
-      <div class="coffee-item" onclick="makecoffee('Американо', 50)">
+      <div class="coffee-item" onclick="makecoffee('Американо', 50, event)">
          <img src="img/americano.png" alt="Американо">
          <span>Американо - 50 руб.</span>
       </div>
-      <div class="coffee-item" onclick="makecoffee('Капучино', 73)">
+      <div class="coffee-item" onclick="makecoffee('Капучино', 73, event)">
          <img src="img/cappuccino.png" alt="Капучино">
          <span>Капучино - 73 руб.</span>
       </div>
-      <div class="coffee-item" onclick="makecoffee('Эспрессо', 61)">
+      <div class="coffee-item" onclick="makecoffee('Эспрессо', 61, event)">
          <img src="img/espresso.png" alt="Эспрессо">
          <span>Эспрессо - 61 руб.</span>
       </div>
-      <div class="coffee-item" onclick="makecoffee('Латте', 112)">
+      <div class="coffee-item" onclick="makecoffee('Латте', 112, event)">
          <img src="img/latte.jpg" alt="Латте">
          <span>Латте - 112 руб.</span>
       </div>
       </div>
             <div class="col-6 coffee-oper">
+              
          <div class="row">
             <div class="col-6">
                
@@ -58,12 +59,18 @@
 </div>
 <button class="btn btn-primary  btn-block mt-2 change-btn">Получите сдачу</button>
   
-<div class="coffee-change-mt-2"></div>
+<div class="coffee-change-mt-2">
+  
+</div>
               </div>
          </div>
       </div>
       </div>
       </div>
+      <div class="money">
+        <img src="img/50rub.jpg" alt="" data-cost="50">
+        <img src="img/100rub.jpg" alt="" data-cost="100">
+        <img src="img/500rub.jpg" alt="" data-cost="500">
       <!-- Optional JavaScript -->
       <script src="script.js"></script>
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->

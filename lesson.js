@@ -204,6 +204,12 @@ setTimeout(changeDisplayText, 1000);
 // changeBtn.addEventListener("click", handler);
 // changeBtn.removeEventListener("click", handler);
 
-
+let coffeeButtons = document.querySelectorAll(".coffee-item");
+for (let i = 0; i < coffeeButtons.length; i++) {
+  coffeeButtons[i].onclick = function() {
+    console.log(this);
+    makeCoffee("Американо", 25, this);
+  }
+}
   
   
